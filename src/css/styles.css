@@ -1,0 +1,113 @@
+@import url('./common.css');
+@import url('simplelightbox/dist/simple-lightbox.min.css');
+@import url('izitoast/dist/css/iziToast.min.css');
+
+.form {
+  display: flex;
+  gap: 8px;
+}
+
+.form__input {
+  width: 272px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  outline: none;
+  font-size: 16px;
+}
+
+.form__input:hover {
+  border-color: #000;
+}
+
+.form__input:focus,
+.form__input:active {
+  border-color: #4e75ff;
+}
+
+.form__btn,
+.load-more-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #4e75ff;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  cursor: pointer;
+}
+
+.form__btn:hover {
+  background: #6c8cff;
+}
+
+.gallery__wrapper {
+  padding: 36px 0;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.gallery li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 360px;
+  border: 1px solid #808080;
+}
+
+.gallery__image {
+  width: 360px;
+  height: 150px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.gallery__info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 20px;
+  color: #2e2f42;
+  font-size: 12px;
+}
+
+.gallery__info__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0px;
+}
+
+.gallery__info__item p {
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.48px;
+  margin: 0;
+}
+
+.gallery__info__item span {
+  line-height: 24px;
+  letter-spacing: 0.48px;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.loader {
+  font-size: 32px;
+}
